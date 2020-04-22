@@ -14,6 +14,15 @@ body {
 
 #drums {
     text-align: center;
+    margin-top: 8%;
+}
+
+.record {
+    display: inline-block;
+}
+
+#drums > h1 {
+    color: #eacdc2;
 }
 
 /* styling for each button */
@@ -23,19 +32,65 @@ body {
     /* Positioning */
     display: inline-block;
     padding: 15px 15px 15px 15px;
-    margin-top: 15%;
+    margin-top: 2%;
     margin-left: 5%;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     /* Sizing */
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     font-size: 50px;
     /* Shape */
     border-radius: 5%;
-    /* box shadows */
-    /* box-shadow: 2px 2px 2px #eacdc2; */
+    /* Box shadow */
     box-shadow: 5px 5px 5px #774c60 inset;
+}
+
+#piano {
+    margin-top: -5%;
+    text-align: center;
+}
+
+#piano > h1 {
+    color: #eacdc2;
+}
+
+#border-box {
+/* border: solid black 2px;
+border-bottom: none;
+background-color: #eacdc2; */
+width: 75%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.white-key {
+    display: inline-block;
+    border: solid black 2px;
+    background-color: #eacdc2;
+    height: 250px;
+    font-size: 16px;
+    width: 9%;
+    margin-right: 10px;
+    margin-left: -5px;
+    border-radius: 5%;
+}
+
+.black-key {
+    display: inline-block;
+    border: solid black 2px;
+    background-color: black;
+    color: white;
+    margin-left: -55px;
+    margin-right: -10px;
+    width: 4%;
+    height: 225px;
+    border-radius: 5%;
+
+}
+
+#r {
+    margin-left: -15px;
 }
