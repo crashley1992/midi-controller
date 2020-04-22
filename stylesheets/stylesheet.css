@@ -10,11 +10,33 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    background-image: url("/images/background.png");
+}
+
+#logo {
+    width: 450px;
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border-radius: 8%;
+    padding: 15px 15px 15px 15px;
+    color: #eacdc2;
+    background-color: #774C60;
+    border-color: black;
+}
+
+button:hover {
+    color: #774C60;
+    background-color: #eacdc2;
 }
 
 #drums {
     text-align: center;
-    margin-top: 8%;
+    margin-top: 35%;
 }
 
 .record {
