@@ -1,6 +1,6 @@
 //event listener for when a key is pressed down
 const keyPress = document.addEventListener("keydown", () => {
-    // console.log(event.which + " down");
+    console.log(event.which + " down");
     keyDrumDown();
 });
 
@@ -10,25 +10,62 @@ const keyReleased = document.addEventListener("keyup", () => {
     keyDrumUp();
 });
 
+//arrays that hold each drum type
+const clapsPlaylist = ["audio/clap_six.wav", "audio/clap_eight.wav"];
+const snarePlaylist = ["audio/snare_one.wav", "audio/snare_two.wav"];
+const kickPlaylist = ["audio/kick_four.wav", "audio/kick_three.wav"];
+
 //function to links actions to when a key is pressed down. Will controll actions associated with each keypress
 const keyDrumDown = () => {
     if (event.which === 65) {
-        // console.log("a was pressed");
+        //provides visual indicator that key has been pressed by changing background color
         document.getElementById("a").style.backgroundColor = "#b75d69";
+
+        //Initializes Audio constructor assigns the first drum beat from claps playlist to variable
+        const drumClapOne = new Audio();
+        drumClapOne.src = clapsPlaylist[0];
+        drumClapOne.play();
     }
     if (event.which === 83) {
-        // console.log("s was pressed");
         document.getElementById("s").style.backgroundColor = "#b75d69";
+        //Initializes Audio constructor assigns the second drum beat from claps playlist to variable
+        const drumClapTwo = new Audio();
+        drumClapTwo.src = clapsPlaylist[1];
+        drumClapTwo.play();
     }
     if (event.which === 68) {
-        // console.log("d was pressed")
         document.getElementById("d").style.backgroundColor = "#b75d69";
+        //Initializes Audio constructor assigns the first drum beat from snares playlist to variable
+        const drumSnareOne = new Audio();
+        drumSnareOne.src = snarePlaylist[0];
+        drumSnareOne.play();
     } 
     if (event.which === 70) {
-        // console.log("f was pressed");
         document.getElementById("f").style.backgroundColor = "#b75d69";
-    }   
-    //pianokey events
+        //Initializes Audio constructor assigns the second drum beat from kick playlist to variable
+        const drumSnareTwo = new Audio();
+        drumSnareTwo.src = snarePlaylist[1];
+        drumSnareTwo.play();
+    } 
+    if (event.which === 71) {
+        document.getElementById("g").style.backgroundColor = "#b75d69";
+        //Initializes Audio constructor assigns the first drum beat from kick playlist to variable
+        const drumKickOne = new Audio();
+        drumKickOne.src = kickPlaylist[0];
+        drumKickOne.play();
+    } 
+    if (event.which === 72) {
+        document.getElementById("h").style.backgroundColor = "#b75d69";
+        //Initializes Audio constructor assigns the second drum beat from kick playlist to variable
+        const drumKickTwo = new Audio();
+        drumKickTwo.src = kickPlaylist[1];
+        drumKickTwo.play();
+    } 
+
+/*************************************************************************************/
+/********** PIANO KEY DOWN EVENTS*******/
+/*************************************************************************************/
+   
     if (event.which === 81) {
         document.getElementById("q").style.backgroundColor = "#b75d69";
     } 
@@ -91,6 +128,13 @@ const keyDrumUp = () => {
         console.log("f was pressed");
         document.getElementById("f").style.backgroundColor = "#eacdc2";
     }   
+    if (event.which === 71) {
+        document.getElementById("g").style.backgroundColor = "#eacdc2";
+    } 
+    if (event.which === 72) {
+        document.getElementById("h").style.backgroundColor = "#eacdc2";
+    } 
+
     //pianokey events
     if (event.which === 81) {
         document.getElementById("q").style.backgroundColor = "#eacdc2";
