@@ -11,37 +11,33 @@ const keyReleased = document.addEventListener("keyup", () => {
 });
 
 //arrays that hold each drum type
-const clapsPlaylist = ["audio/clap_six.wav", "audio/clap_eight.wav"];
-const snarePlaylist = ["audio/snare_one.wav", "audio/snare_two.wav"];
-const kickPlaylist = ["audio/kick_four.wav", "audio/kick_three.wav"];
+// const clapsPlaylist = ["audio/clap_six.wav", "audio/clap_eight.wav"];
+// const snarePlaylist = ["audio/snare_one.wav", "audio/snare_two.wav"];
+// const kickPlaylist = ["audio/kick_four.wav", "audio/kick_three.wav"];
 const mappedArray = [];
 
 const checkBoxListener = () => {
-     let checkbox = document.querySelectorAll("input[name=checkbox]");
-     //since querySelectorAll returns an array the event listner needs to be added by looping though the array
-    for (var i = 0; i < checkbox.length; i++) {
-        checkbox[i].addEventListener("change", checkedOrNot);
-      }
-      
-      //using function because const was not working...possibly binding?
-      function checkedOrNot() {
-        var isChecked = this.checked;
-      
-        if (isChecked) { 
-            //if box is checked
-          console.log('checked');
-          var checkboxA = document.getElementById("playlistDrums").value;
-          mappedArray.push(checkboxA)
-          console.log(mappedArray)
-        } else { 
-            //unchecked
-          console.log('unchecked');
-          mappedArray.pop(checkboxA)
-          console.log(mappedArray)
-        }
-      }
+     document.querySelectorAll("input[name=checkbox]").forEach((drum) => {
+        drum.addEventListener('change', checkedOrNot) 
+            // console.log(item.value); 
+            function checkedOrNot() {
+                let isChecked = this.checked;
+                if (isChecked) { 
+                    //if box is checked
+                  console.log('checked');
+                  mappedArray.push(drum.value)
+                  console.log(mappedArray)
+                } else { 
+                    //unchecked
+                  console.log('unchecked');
+                  mappedArray.pop(drum.value)
+                  console.log(drum.value)
+                  console.log(mappedArray)
+                }
+              }
+         })
 }
-
+//calls function
 checkBoxListener();
 
 
@@ -54,44 +50,44 @@ const keyDrumDown = () => {
         document.getElementById("a").style.backgroundColor = "#b75d69";
 
         //Initializes Audio constructor assigns the first drum beat from claps playlist to variable
-        const drumClapOne = new Audio();
-        drumClapOne.src = mappedArray[0];
-        drumClapOne.play();  
+        const drumOne = new Audio();
+        drumOne.src = mappedArray[0];
+        drumOne.play();  
     }
     if (event.which === 83) {
         document.getElementById("s").style.backgroundColor = "#b75d69";
         //Initializes Audio constructor assigns the second drum beat from claps playlist to variable
-        const drumClapTwo = new Audio();
-        drumClapTwo.src = clapsPlaylist[1];
-        drumClapTwo.play();
+        const drumTwo = new Audio();
+        drumTwo.src = mappedArray[1];
+        drumTwo.play();
     }
     if (event.which === 68) {
         document.getElementById("d").style.backgroundColor = "#b75d69";
         //Initializes Audio constructor assigns the first drum beat from snares playlist to variable
-        const drumSnareOne = new Audio();
-        drumSnareOne.src = snarePlaylist[0];
-        drumSnareOne.play();
+        const drumThree = new Audio();
+        drumThree.src = mappedArray[2];
+        drumThree.play();
     } 
     if (event.which === 70) {
         document.getElementById("f").style.backgroundColor = "#b75d69";
         //Initializes Audio constructor assigns the second drum beat from kick playlist to variable
-        const drumSnareTwo = new Audio();
-        drumSnareTwo.src = snarePlaylist[1];
-        drumSnareTwo.play();
+        const drumFour = new Audio();
+        drumFour.src = mappedArray[3];
+        drumFour.play();
     } 
     if (event.which === 71) {
         document.getElementById("g").style.backgroundColor = "#b75d69";
         //Initializes Audio constructor assigns the first drum beat from kick playlist to variable
-        const drumKickOne = new Audio();
-        drumKickOne.src = kickPlaylist[0];
-        drumKickOne.play();
+        const drumFive = new Audio();
+        drumFive.src = mappedArray[4];
+        drumFive.play();
     } 
     if (event.which === 72) {
         document.getElementById("h").style.backgroundColor = "#b75d69";
         //Initializes Audio constructor assigns the second drum beat from kick playlist to variable
-        const drumKickTwo = new Audio();
-        drumKickTwo.src = kickPlaylist[1];
-        drumKickTwo.play();
+        const drumSix = new Audio();
+        drumSix.src = mappedArray[5];
+        drumSix.play();
     } 
 
 /*************************************************************************************/
