@@ -2,15 +2,6 @@ body {
     background-color: #1A1423;
 }
 
-#drumPlaylistContainer {
-    margin-top: 75%;
-    text-align: center;
-    color: #eacdc2;;
-}
-.drum-gallery {
-    display: inline-block;
-}
-
 #header {
     text-align: center;
     width: 100%;
@@ -32,19 +23,23 @@ body {
 #header > p {
     color: #eacdc2;
 }
+/******************* DRUM STYLING *************************/
+#drum-header {
+    margin-top: 38%;
+}
 
-button {
-    margin-top: 3%;
-    border-radius: 8%;
-    padding: 15px 15px 15px 15px;
-    color: #eacdc2;
-    background-color: #774C60;
-    border-color: black;
+#drumPlaylistContainer {
+    margin-top: 35%;
+    text-align: center;
+    color: #eacdc2;;
+}
+
+.drum-gallery {
+    display: inline-block;
 }
 
 #drums {
     text-align: center;
-    margin-top: 5%;
 }
 
 .record {
@@ -62,6 +57,7 @@ button {
     /* Positioning */
     display: inline-block;
     margin-top: 1%;
+    margin-bottom: 0;
     margin-left: 5%;
     padding-top: 5%;
     padding-left: 5%;
@@ -76,7 +72,7 @@ button {
     /* Box shadow */
     box-shadow: 5px 5px 5px #774c60 inset;
 }
-
+/**************PIANO STYLING*****************/
 #piano {
     margin-top: -5%;
     text-align: center;
