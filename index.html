@@ -7,80 +7,81 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
 </head>
 <body>
-   <!-- <div id="header">
+   <div id="header">
     <img id="logo" src="images/Music Logo.png" alt="Logo for Midi Tunes" />
     <p>Drum assests: Branden Clarke</p>
     <p>Designer/Developer: Ashley Clarke</p>
-   </div> -->
-
-
- <div>
+   </div>
+<!-- Container for drums -->
+ <div id="drumPlaylistContainer">
      <h1>Drum Beat Play List</h1>
-     <!-- Drum Beat 1 Drum Beat Clap 1-->
-     <div id="drum1">
-        <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/clap_eight.wav">
-     <label for="clap">Drum Beat Clap 1</label><br>
-    <audio controls>
-        <source class="playlist" src="audio/clap_eight.wav" type="audio/wav">
+<!-- Drum Beat 3 Drum Beat Snare 1-->
+     <div class="drum-gallery">
+        <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_one.wav">
+        <label for="clap">Drum Beat Snare 1</label><br>
+        <audio controls>
+            <source class="playlist" src="audio/snare_one.wav" type="audio/wav">
         </audio>
      </div>
-     <!-- Drum Beat 2 Drum Beat Clap 2-->
-     <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/clap_six.wav" onclick="checkBoxListener()">
-     <label for="clap">Drum Beat Clap 2</label><br>
-    <audio controls>
-        <source class="playlist" src="audio/clap_six.wav" type="audio/wav">
-        </audio>
-        <!-- Drum Beat 3 Drum Beat Snare 1-->
-     <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_one.wav">
-     <label for="clap">Drum Beat Snare 1</label><br>
-    <audio controls>
-        <source class="playlist" src="audio/snare_one.wav" type="audio/wav">
-        </audio>
-        <!-- Drum Beat 4 Drum Beat Snare 2-->
+<!-- Drum Beat 4 Drum Beat Snare 2-->
+     <div class="drum-gallery">
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_two.wav">
      <label for="clap">Drum Beat Snare 2</label><br>
     <audio controls>
         <source class="playlist" src="audio/snare_two.wav" type="audio/wav">
         </audio>
-        <!-- Drum Beat 5 Drum Beat Snare 3-->
-     <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_three.wav">
-     <label for="clap">Drum Beat Snare 3</label><br>
+     </div>
+<!-- Drum Beat 5 Drum Beat Snare 3-->
+     <div class="drum-gallery">
+        <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_three.wav">
+        <label for="clap">Drum Beat Snare 3</label><br>
     <audio controls>
         <source class="playlist" src="audio/snare_three.wav" type="audio/wav">
-        </audio>
-        <!-- Drum Beat 6 -->
+    </audio>
+     </div>
+<!-- Drum Beat 6 -->
+     <div class="drum-gallery">
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_four.wav">
      <label for="clap">Drum Beat Snare 4</label><br>
     <audio controls>
         <source class="playlist" src="audio/snare_four.wav" type="audio/wav">
         </audio>
-        <!-- Drum Beat 7 -->
+     </div>
+<!-- Drum Beat 7 -->
+     <div class="drum-gallery">
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_three.wav">
      <label for="clap">Drum Beat Kick 1</label><br>
     <audio controls>
         <source class="playlist" src="audio/kick_three.wav" type="audio/wav">
         </audio>
-        <!-- Drum Beat 8 -->
+     </div>
+     <div class="drum-gallery">
+         <!-- Drum Beat 8 -->
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_four.wav">
      <label for="clap">Drum Beat Kick 2</label><br>
     <audio controls>
         <source class="playlist" src="audio/kick_four.wav" type="audio/wav">
         </audio>
-        <!-- Drum Beat 9 -->
+     </div>
+     <div class="drum-gallery">
+         <!-- Drum Beat 9 -->
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_big.wav">
      <label for="clap">Drum Beat Kick 3</label><br>
     <audio controls>
         <source class="playlist" src="audio/kick_big.wav" type="audio/wav">
         </audio>
-        <!-- Drum Beat 10 -->
+     </div>
+     <div class="drum-gallery">
+          <!-- Drum Beat 10 -->
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/clap_eight.wav">
      <label for="clap">Drum Beat Kick Distorted</label><br>
     <audio controls>
         <source class="playlist" src="audio/kick_distort.wav" type="audio/wav">
         </audio>
+     </div>
  </div>  
 
-
+<!--Kwyboards Buttons that are displayed for drums-->
      <div id="drums">
        <h1>Drums</h1> 
         <h6 id="a" class="drum-button">A</h6>
@@ -98,9 +99,9 @@
     <button id="octave">Ocative Up</button>
     <button id="octave">Ocative Down</button> -->
 
-       <h1>Piano</h1>
-       <div id="border-box">
-            Real Note on Piano C -->
+       <!-- <h1>Piano</h1>
+       <div id="border-box"> -->
+           <!--- Real Note on Piano C -->
        <!-- <div id="q" class="white-key">Q</div>
        <div id="two" class="black-key">2</div> -->
            <!-- Real Note on Piano D -->

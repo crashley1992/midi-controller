@@ -11,9 +11,6 @@ const keyReleased = document.addEventListener("keyup", () => {
 });
 
 //arrays that hold each drum type
-// const clapsPlaylist = ["audio/clap_six.wav", "audio/clap_eight.wav"];
-// const snarePlaylist = ["audio/snare_one.wav", "audio/snare_two.wav"];
-// const kickPlaylist = ["audio/kick_four.wav", "audio/kick_three.wav"];
 const mappedArray = [];
 
 const checkBoxListener = () => {
@@ -39,9 +36,6 @@ const checkBoxListener = () => {
 }
 //calls function
 checkBoxListener();
-
-
-
 
 //function to links actions to when a key is pressed down. Will controll actions associated with each keypress
 const keyDrumDown = () => {

@@ -2,8 +2,13 @@ body {
     background-color: #1A1423;
 }
 
-.playlist {
-    display: block;
+#drumPlaylistContainer {
+    margin-top: 75%;
+    text-align: center;
+    color: #eacdc2;;
+}
+.drum-gallery {
+    display: inline-block;
 }
 
 #header {
@@ -37,14 +42,9 @@ button {
     border-color: black;
 }
 
-button:hover {
-    color: #774C60;
-    background-color: #eacdc2;
-}
-
 #drums {
     text-align: center;
-    margin-top: 40%;
+    margin-top: 5%;
 }
 
 .record {
