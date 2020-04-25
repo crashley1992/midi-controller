@@ -14,6 +14,38 @@ const keyReleased = document.addEventListener("keyup", () => {
 const clapsPlaylist = ["audio/clap_six.wav", "audio/clap_eight.wav"];
 const snarePlaylist = ["audio/snare_one.wav", "audio/snare_two.wav"];
 const kickPlaylist = ["audio/kick_four.wav", "audio/kick_three.wav"];
+const mappedArray = [];
+
+const checkBoxListener = () => {
+     let checkbox = document.querySelectorAll("input[name=checkbox]");
+     //since querySelectorAll returns an array the event listner needs to be added by looping though the array
+    for (var i = 0; i < checkbox.length; i++) {
+        checkbox[i].addEventListener("change", checkedOrNot);
+      }
+      
+      //using function because const was not working...possibly binding?
+      function checkedOrNot() {
+        var isChecked = this.checked;
+      
+        if (isChecked) { 
+            //if box is checked
+          console.log('checked');
+          var checkboxA = document.getElementById("playlistDrums").value;
+          mappedArray.push(checkboxA)
+          console.log(mappedArray)
+        } else { 
+            //unchecked
+          console.log('unchecked');
+          mappedArray.pop(checkboxA)
+          console.log(mappedArray)
+        }
+      }
+}
+
+checkBoxListener();
+
+
+
 
 //function to links actions to when a key is pressed down. Will controll actions associated with each keypress
 const keyDrumDown = () => {
@@ -23,8 +55,8 @@ const keyDrumDown = () => {
 
         //Initializes Audio constructor assigns the first drum beat from claps playlist to variable
         const drumClapOne = new Audio();
-        drumClapOne.src = clapsPlaylist[0];
-        drumClapOne.play();
+        drumClapOne.src = mappedArray[0];
+        drumClapOne.play();  
     }
     if (event.which === 83) {
         document.getElementById("s").style.backgroundColor = "#b75d69";
