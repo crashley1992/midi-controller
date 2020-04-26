@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midi Tunes</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/fonts.css">
 </head>
 <body>
     <!-- Header with logo and background picture -->
@@ -13,6 +14,13 @@
     <p>Drum assests: Branden Clarke</p>
     <p>Designer/Developer: Ashley Clarke</p>
    </div>
+
+<!-- Toggle for Open Dyslexic Font -->
+<h4 id="toggle-title">Toggle for Open Dyslexic Font</h4>
+<label class="switch" onchange="toggle()" id="toggle-switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>
 
 <!-- Container for drums -->
  <div id="drumPlaylistContainer">
@@ -126,8 +134,9 @@
     </div>
    </div> -->
    
-    <!--jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- SCRIPTS -->
    <script src="scripts/script.js"></script>
+   <script src="scripts/accessibility-features.js"></script>
+
 </body>
 </html>
