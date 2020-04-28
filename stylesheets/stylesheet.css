@@ -111,39 +111,47 @@ body {
     display: inline-block;
 }
 
-#drums {
+#drums-buttons-container {
+    border: solid #eacdc2 2px;
+    background-color: #372549;
+    box-shadow: 5px 5px 5px #1A1423 inset;
+    border-radius: 8%;
     text-align: center;
+    width: 80%;
+    margin: auto;
 }
 
-.record {
-    display: inline-block;
-}
-
-#drums > h1 {
+#drum-button-header {
     color: #eacdc2;
+    text-align: center;
 }
 
 /* styling for each button */
 .drum-button {
-    border: solid black 2px;
-    background-color: #eacdc2;
-    /* Positioning */
+    /* Sizing  */
+    width: 200px;
+    height: 200px;
+    /* positioning */
     display: inline-block;
-    margin-top: 1%;
-    margin-bottom: 0;
-    margin-left: 5%;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    /* Sizing */
-    width: 40px;
-    height: 40px;
-    font-size: 50px;
-    /* Shape */
+    margin: 2%;
+    /* Box styling */
+    border: #EACDC2 2px solid;
+    color: #1A1423;
+    background-color: #eacdc2;
     border-radius: 5%;
     /* Box shadow */
     box-shadow: 5px 5px 5px #774c60 inset;
+}
+
+.drum-text {
+    font-size: 45px;
+    border: solid #eacdc2 2px;
+    background-color: #774C60;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 5%;
+    height: 180px;
+    width: 180px;
 }
 /**************PIANO STYLING*****************/
 #piano {

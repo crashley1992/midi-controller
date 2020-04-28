@@ -83,6 +83,20 @@ const keyDrumDown = () => {
         drumSix.src = mappedArray[5];
         drumSix.play();
     } 
+    if (event.which === 74) {
+        document.getElementById("j").style.backgroundColor = "#b75d69";
+        //Initializes Audio constructor assigns the second drum beat from kick playlist to variable
+        const drumSeven = new Audio();
+        drumSeven.src = mappedArray[6];
+        drumSeven.play();
+    } 
+    if (event.which === 75) {
+        document.getElementById("k").style.backgroundColor = "#b75d69";
+        //Initializes Audio constructor assigns the second drum beat from kick playlist to variable
+        const drumEight = new Audio();
+        drumEight.src = mappedArray[7];
+        drumEight.play();
+    } 
 
 /*************************************************************************************/
 /********** PIANO KEY DOWN EVENTS*******/
@@ -155,6 +169,12 @@ const keyDrumUp = () => {
     } 
     if (event.which === 72) {
         document.getElementById("h").style.backgroundColor = "#eacdc2";
+    } 
+    if (event.which === 74) {
+        document.getElementById("j").style.backgroundColor = "#eacdc2";
+    } 
+    if (event.which === 75) {
+        document.getElementById("k").style.backgroundColor = "#eacdc2";
     } 
 
     //pianokey events

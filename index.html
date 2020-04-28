@@ -22,10 +22,13 @@
     <span class="slider round"></span>
 </label>
 
+<!-- ************************************************************ -->
 <!-- Container for drums -->
+<!-- ************************************************************ -->
+
  <div id="drumPlaylistContainer">
      <h1 id="drum-header">Drum Beat Play List</h1>
-<!-- Drum Beat 3 Drum Beat Snare 1-->
+<!-- Drum Beat 1 Drum Beat Snare 1-->
      <div class="drum-gallery">
         <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_one.wav">
         <label for="clap">Drum Beat Snare 1</label><br>
@@ -33,7 +36,7 @@
             <source class="playlist" src="audio/snare_one.wav" type="audio/wav">
         </audio>
      </div>
-<!-- Drum Beat 4 Drum Beat Snare 2-->
+<!-- Drum Beat 2 Drum Beat Snare 2-->
      <div class="drum-gallery">
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_two.wav">
      <label for="clap">Drum Beat Snare 2</label><br>
@@ -41,7 +44,7 @@
         <source class="playlist" src="audio/snare_two.wav" type="audio/wav">
         </audio>
      </div>
-<!-- Drum Beat 5 Drum Beat Snare 3-->
+<!-- Drum Beat 3 Drum Beat Snare 3-->
      <div class="drum-gallery">
         <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_three.wav">
         <label for="clap">Drum Beat Snare 3</label><br>
@@ -49,7 +52,7 @@
         <source class="playlist" src="audio/snare_three.wav" type="audio/wav">
     </audio>
      </div>
-<!-- Drum Beat 6 -->
+<!-- Drum Beat 4 Drum Beat Snare 4-->
      <div class="drum-gallery">
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/snare_four.wav">
      <label for="clap">Drum Beat Snare 4</label><br>
@@ -57,7 +60,7 @@
         <source class="playlist" src="audio/snare_four.wav" type="audio/wav">
         </audio>
      </div>
-<!-- Drum Beat 7 -->
+<!-- Drum Beat 5 Drum Beat Kick 1-->
      <div class="drum-gallery">
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_three.wav">
      <label for="clap">Drum Beat Kick 1</label><br>
@@ -66,7 +69,7 @@
         </audio>
      </div>
      <div class="drum-gallery">
-         <!-- Drum Beat 8 -->
+         <!-- Drum Beat 6 Drum Beat Kick 2-->
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_four.wav">
      <label for="clap">Drum Beat Kick 2</label><br>
     <audio controls>
@@ -74,7 +77,7 @@
         </audio>
      </div>
      <div class="drum-gallery">
-         <!-- Drum Beat 9 -->
+         <!-- Drum Beat 7 Drum Beat Kick 3-->
      <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_big.wav">
      <label for="clap">Drum Beat Kick 3</label><br>
     <audio controls>
@@ -82,25 +85,82 @@
         </audio>
      </div>
      <div class="drum-gallery">
-          <!-- Drum Beat 10 -->
-     <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/clap_eight.wav">
+          <!-- Drum Beat 8 Drum Beat Kick Distorted-->
+     <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_distort.wav">
      <label for="clap">Drum Beat Kick Distorted</label><br>
     <audio controls>
         <source class="playlist" src="audio/kick_distort.wav" type="audio/wav">
         </audio>
      </div>
+     <div class="drum-gallery">
+        <!-- Drum Beat 9 Drum Beat Kick Clap 1-->
+   <input type="checkbox" id="playlistDrums" name="checkbox" value="audio/clap_six.wav">
+   <label for="clap">Drum Beat Kick Clap 1</label><br>
+  <audio controls>
+      <source class="playlist" src="audio/clap_six.wav" type="audio/wav">
+      </audio>
+   </div>
+   <div class="drum-gallery">
+    <!-- Drum Beat 10 Drum Beat Clap 2-->
+<input type="checkbox" id="playlistDrums" name="checkbox" value="audio/clap_eight.wav">
+<label for="clap">Drum Beat Clap 2</label><br>
+<audio controls>
+  <source class="playlist" src="audio/clap_eight.wav" type="audio/wav">
+  </audio>
+</div>
+<div class="drum-gallery">
+    <!-- Drum Beat 11 Drum Beat Drum Beat Kick Blind-->
+<input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_blind.wav">
+<label for="clap">Drum Beat Kick Blind</label><br>
+<audio controls>
+  <source class="playlist" src="audio/kick_blind.wav" type="audio/wav">
+  </audio>
+</div>
+<div class="drum-gallery">
+    <!-- Drum Beat 12 Drum Beat Drum Beat Kick Hall-->
+<input type="checkbox" id="playlistDrums" name="checkbox" value="audio/kick_hall.wav">
+<label for="clap">Drum Beat Kick Hall</label><br>
+<audio controls>
+  <source class="playlist" src="audio/kick_hall.wav" type="audio/wav">
+  </audio>
+</div>
  </div>  
 
-<!--Kwyboards Buttons that are displayed for drums-->
-     <div id="drums">
-       <h1>Drums</h1> 
-        <h6 id="a" class="drum-button">A</h6>
-        <h6 id="s" class="drum-button">S</h6>
-        <h6 id="d" class="drum-button">D</h6>
-        <h6 id="f" class="drum-button">F</h6>
-        <h6 id="g" class="drum-button">G</h6>
-        <h6 id="h" class="drum-button">H</h6>
+<!-- ************************************************************ -->
+<!--Keyboards Buttons that are displayed for drums-->
+<!-- ************************************************************ -->
+<h1 id="drum-button-header">Midi Controller</h1> 
+
+     <div id="drums-buttons-container">
+        <div id="a" class="drum-button">
+            <h6 class="drum-text">A</h6>
+        </div>
+        <div id="s" class="drum-button">
+            <h6 class="drum-text">S</h6>
+        </div>
+        <div id="d" class="drum-button">
+            <h6 class="drum-text">D</h6>
+        </div>
+        <div id="f" class="drum-button">
+            <h6 class="drum-text">F</h6>
+        </div>
+        <div id="g" class="drum-button">
+            <h6 class="drum-text">G</h6>
+        </div>
+        <div id="h" class="drum-button">
+            <h6 class="drum-text">H</h6>
+        </div>
+        <div id="j" class="drum-button">
+            <h6 class="drum-text">J</h6>
+        </div>
+        <div id="K" class="drum-button">
+            <h6 class="drum-text">K</h6>
+        </div>
    </div> 
+
+<!-- ************************************************************ -->
+<!-- PIANO KEYS -->
+<!-- ************************************************************ -->
 
    <!-- <div id="piano">
     <button class="record">Record</button>
