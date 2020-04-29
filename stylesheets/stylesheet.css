@@ -135,23 +135,26 @@ body {
     display: inline-block;
     margin: 2%;
     /* Box styling */
-    border: #EACDC2 2px solid;
+    /* border: #EACDC2 2px solid; */
     color: #1A1423;
     background-color: #eacdc2;
-    border-radius: 5%;
+    border-radius: 8%;
     /* Box shadow */
-    box-shadow: 5px 5px 5px #774c60 inset;
+    /* box-shadow: 5px 5px 5px #774c60 inset; */
+    box-shadow: 4px 8px #b75d69
 }
 
 .drum-text {
     font-size: 45px;
-    border: solid #eacdc2 2px;
+    /* border: solid #eacdc2 2px; */
     background-color: #774C60;
+    color: #eacdc2;
     margin: auto;
     margin-top: 5%;
+    padding-top: 15%;
     border-radius: 5%;
-    height: 180px;
-    width: 180px;
+    height: 150px;
+    width: 175px;
 }
 /**************PIANO STYLING*****************/
 #piano {

@@ -124,8 +124,15 @@
   <source class="playlist" src="audio/kick_hall.wav" type="audio/wav">
   </audio>
 </div>
- </div>  
-
+ </div> 
+<!-- ************************************************************ -->
+<!--Recorder-->
+<!-- ************************************************************ -->
+<div id="recorder-track">
+    <button>Record</button>
+<button data-playing="false" role="switch" aria-checked="false" id="play-button">Play/Pause</button>
+<audio id="play-audio" src="audio/kick_hall.wav" type="audio/wav"></audio>
+</div>
 <!-- ************************************************************ -->
 <!--Keyboards Buttons that are displayed for drums-->
 <!-- ************************************************************ -->
@@ -153,7 +160,7 @@
         <div id="j" class="drum-button">
             <h6 class="drum-text">J</h6>
         </div>
-        <div id="K" class="drum-button">
+        <div id="k" class="drum-button">
             <h6 class="drum-text">K</h6>
         </div>
    </div> 
@@ -195,8 +202,9 @@
    </div> -->
    
    <!-- SCRIPTS -->
-   <script src="scripts/script.js"></script>
+   <script src="scripts/instruments.js"></script>
    <script src="scripts/accessibility-features.js"></script>
+   <script src="scripts/recorder.js"></script>
 
 </body>
 </html>
