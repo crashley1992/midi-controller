@@ -1,3 +1,5 @@
+// *******************************PLAY BUTTON*****************************//
+// **********************************************************************//
 //creates an instance of the audio context
 const AudioContext = window.AudioContext || window.webkitAudioContext;
 
@@ -41,3 +43,5 @@ audioElement.addEventListener('ended', () => {
     playButton.dataset.playing = 'false'
 }, false);
 
+//***************************RECORD BUTTON **********************/
+// *************************************************************/
