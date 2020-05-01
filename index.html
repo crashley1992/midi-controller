@@ -128,15 +128,20 @@
 <!-- ************************************************************ -->
 <!--Recorder-->
 <!-- ************************************************************ -->
-<div id="recorder-track">
-    <button id="recorder">Record</button>
-    <button id="stop-recording">Stop</button>
+<div id='recorded-track'>
+    <h1 id="audio-track-title">Audio Track</h1>
+    <div id="recorded-beat-container">
+        <div id="arrow"></div>
+    </div>
+</div>
 <!-- ************************************************************ -->
 <!--Play button-->
 <!-- ************************************************************ -->
-
-<button data-playing="false" role="switch" aria-checked="false" id="play-button">Play/Pause</button>
-<audio id="play-audio" src="audio/kick_hall.wav" type="audio/wav"></audio>
+<div id="play-button-container">
+    <button data-playing="false" role="switch" aria-checked="false" id="play-button">Play/Pause</button>
+    <audio id="play-audio" src="audio/kick_hall.wav" type="audio/wav"></audio>
+    <button>Clear</button>
+    </div>
 </div>
 <!-- ************************************************************ -->
 <!--Keyboards Buttons that are displayed for drums-->

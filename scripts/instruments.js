@@ -221,4 +221,3 @@ const keyDrumUp = () => {
         document.getElementById("eight").style.backgroundColor = "black";
     }
 }
-    
