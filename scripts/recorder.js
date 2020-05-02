@@ -46,19 +46,21 @@ audioElement.addEventListener('ended', () => {
 // *************************************************************/
 const audioTrack = document.addEventListener("keydown", () => {
     console.log(event.which + ' key tracking')
-
     //********************************************** */
     //mappedArray is the const variable in instrument.js that holds the selected drums beats from a user.
-    //const song is tracking what audio is selected along with key press.
-    //this should allow a playback of what specific beats are played.
+    const songAudioTrack = [];
     const song = mappedArray;
-    console.log(song + " tracking for song");
+    console.log(song + " tracking for song");    
     //********************************************** */
     //switch events for when a key is pressed
     switch(event.which) {
         case 65: 
-        console.log(typeof song);
-        
+            songAudioTrack.push(song[0])
+            console.log(songAudioTrack.length);
+            const playInputDivA = document.createElement("DIV");
+            const playTextA = document.createTextNode("beat");
+            playInputDivA.appendChild(playTextA);
+            document.getElementById("recorded-beat-container").appendChild(playInputDivA);
         break;
 
         case 83: 
