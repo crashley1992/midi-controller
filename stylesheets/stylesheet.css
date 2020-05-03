@@ -125,8 +125,17 @@ body {
   overflow-x: scroll;
 }
 
+.drum-recorded {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+  border: solid 1px black;
+  padding: 1px 1px 1px 1px;
+}
+
 #arrow {
   border-radius: 50%;
+  margin-bottom: 2%;
   width: 15px;
   height: 15px;
   background-color: #372549;
